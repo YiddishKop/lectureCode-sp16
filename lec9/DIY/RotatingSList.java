@@ -1,6 +1,21 @@
 /* SList, but with additional rotateRight operation. */
-public class RotatingSList<Item> {
+public class RotatingSList<Item> extends SList<Item>{
 
+	
+	public void rotateRight() {
+		// method 1:
+			// 找到 backNode
+			// backNode.next = sentinel.next; sentinel.next = backNode
+			// second backNode.next = null;
+		// method 2：使用父类函数
+			// item = getBack()
+			// insertFront(item)
+			// deleteBack
+		Item item = getBack(); 
+		insertFront(item);
+		deleteBack();
+		
+	}
 	/** To do: Implement RotatingSList such that code compiles and outputs correct result. */
 
 	public static void main(String[] args) {

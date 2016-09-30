@@ -13,7 +13,7 @@ public class Hello {
 		x = 2 * x;
 		System.out.println(x);
 
-		x = "ross is a sadist";
+		//x = "ross is a sadist";
 		System.out.println(x);
 	}
 }
